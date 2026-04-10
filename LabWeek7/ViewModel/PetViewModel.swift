@@ -11,7 +11,7 @@ class PetViewModel: ObservableObject {
 
     init() {
         self.pet = Pet(
-            name: "Jamir",
+            name: "Jason Tio",
             hunger: Stat(value: 80, maxValue: 150),
             cleanliness: Stat(value: 110, maxValue: 150),
             fun: Stat(value: 100, maxValue: 150),
@@ -51,11 +51,7 @@ class PetViewModel: ObservableObject {
 
     func play() {
         guard pet.isAlive else { return }
-        
-        // increases "fun" and gives money, but reduces energy and cleanliness
-        // Increases on button click by ~20-40.
-        // Money gained from play is ~20-30
-        
+            
         let funGain = 25
         let moneyGain = 20
         let energyLoss = 15
@@ -109,7 +105,6 @@ class PetViewModel: ObservableObject {
     func rest() {
         guard pet.isAlive else { return }
         
-        // increases “Energy” but reduces “fun” and “hunger”.
         let energyGain = 25
         let funLoss = 10
         let hungerLoss = 10
@@ -125,7 +120,6 @@ class PetViewModel: ObservableObject {
 
     func revive() {
         guard !pet.isAlive else { return }
-        // Revive by taking all money and set stats to half max.
         pet.wallet = 0
         pet.hunger.value = pet.hunger.maxValue / 2
         pet.cleanliness.value = pet.cleanliness.maxValue / 2

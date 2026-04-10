@@ -18,12 +18,12 @@ struct HomeView: View {
                 
                 VStack {
                     ZStack {
-                        Image(systemName: "person.crop.rectangle.fill")
+                        Image("my-face")
                             .resizable()
                             .scaledToFit()
                             .frame(height: 150)
                             .cornerRadius(15)
-                            .foregroundColor(.gray)
+                            .grayscale(viewModel.pet.isAlive ? 0.0 : 1.0)
                             
                         if !viewModel.pet.isAlive {
                             Color.black.opacity(0.3)
