@@ -6,8 +6,38 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B0295C8B2F8881840079A3DE /* LabWeek7Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B0295C8A2F8881840079A3DE /* LabWeek7Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0295C8C2F8881840079A3DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0295C4F2F88778C0079A3DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0295C892F8881840079A3DE;
+			remoteInfo = "LabWeek7Watch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B0295C982F8881880079A3DE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B0295C8B2F8881840079A3DE /* LabWeek7Watch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		B0295C572F88778C0079A3DE /* LabWeek7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LabWeek7.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0295C852F8881830079A3DE /* LabWeek7Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LabWeek7Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0295C8A2F8881840079A3DE /* LabWeek7Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LabWeek7Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +46,22 @@
 			path = LabWeek7;
 			sourceTree = "<group>";
 		};
+		B0295C8E2F8881840079A3DE /* LabWeek7Watch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "LabWeek7Watch Watch App";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B0295C542F88778C0079A3DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0295C872F8881840079A3DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				B0295C592F88778C0079A3DE /* LabWeek7 */,
+				B0295C8E2F8881840079A3DE /* LabWeek7Watch Watch App */,
 				B0295C582F88778C0079A3DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				B0295C572F88778C0079A3DE /* LabWeek7.app */,
+				B0295C852F8881830079A3DE /* LabWeek7Watch.app */,
+				B0295C8A2F8881840079A3DE /* LabWeek7Watch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +115,47 @@
 			productReference = B0295C572F88778C0079A3DE /* LabWeek7.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B0295C842F8881830079A3DE /* LabWeek7Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0295C992F8881880079A3DE /* Build configuration list for PBXNativeTarget "LabWeek7Watch" */;
+			buildPhases = (
+				B0295C832F8881830079A3DE /* Resources */,
+				B0295C982F8881880079A3DE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0295C8D2F8881840079A3DE /* PBXTargetDependency */,
+			);
+			name = LabWeek7Watch;
+			packageProductDependencies = (
+			);
+			productName = LabWeek7Watch;
+			productReference = B0295C852F8881830079A3DE /* LabWeek7Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		B0295C892F8881840079A3DE /* LabWeek7Watch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0295C952F8881880079A3DE /* Build configuration list for PBXNativeTarget "LabWeek7Watch Watch App" */;
+			buildPhases = (
+				B0295C862F8881840079A3DE /* Sources */,
+				B0295C872F8881840079A3DE /* Frameworks */,
+				B0295C882F8881840079A3DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B0295C8E2F8881840079A3DE /* LabWeek7Watch Watch App */,
+			);
+			name = "LabWeek7Watch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "LabWeek7Watch Watch App";
+			productReference = B0295C8A2F8881840079A3DE /* LabWeek7Watch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -81,6 +167,12 @@
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					B0295C562F88778C0079A3DE = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					B0295C842F8881830079A3DE = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					B0295C892F8881840079A3DE = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
@@ -100,12 +192,28 @@
 			projectRoot = "";
 			targets = (
 				B0295C562F88778C0079A3DE /* LabWeek7 */,
+				B0295C842F8881830079A3DE /* LabWeek7Watch */,
+				B0295C892F8881840079A3DE /* LabWeek7Watch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B0295C552F88778C0079A3DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0295C832F8881830079A3DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0295C882F8881840079A3DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +230,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B0295C862F8881840079A3DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0295C8D2F8881840079A3DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0295C892F8881840079A3DE /* LabWeek7Watch Watch App */;
+			targetProxy = B0295C8C2F8881840079A3DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B0295C602F88778E0079A3DE /* Debug */ = {
@@ -306,6 +429,100 @@
 			};
 			name = Release;
 		};
+		B0295C962F8881880079A3DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LabWeek7Watch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.LabWeek7Watch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		B0295C972F8881880079A3DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LabWeek7Watch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.LabWeek7Watch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
+		B0295C9A2F8881880079A3DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = LabWeek7Watch;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.LabWeek7Watch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B0295C9B2F8881880079A3DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = LabWeek7Watch;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.LabWeek7Watch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -323,6 +540,24 @@
 			buildConfigurations = (
 				B0295C632F88778E0079A3DE /* Debug */,
 				B0295C642F88778E0079A3DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0295C952F8881880079A3DE /* Build configuration list for PBXNativeTarget "LabWeek7Watch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0295C962F8881880079A3DE /* Debug */,
+				B0295C972F8881880079A3DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0295C992F8881880079A3DE /* Build configuration list for PBXNativeTarget "LabWeek7Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0295C9A2F8881880079A3DE /* Debug */,
+				B0295C9B2F8881880079A3DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
