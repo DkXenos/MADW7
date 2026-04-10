@@ -1,4 +1,4 @@
-        //
+//
 //  ContentView.swift
 //  LabWeek7
 //
@@ -9,6 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var viewModel = PetViewModel()
+    
+#if os(watchOS)
+    var body: some View {
+        WatchActionPageView(viewModel: viewModel)
+    }
+#else
     @State private var selection: String? = "Status"
     
     var body: some View {
@@ -40,6 +46,7 @@ struct ContentView: View {
             }
         }
     }
+#endif
 }
 
 #Preview {

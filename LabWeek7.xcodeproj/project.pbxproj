@@ -40,14 +40,34 @@
 		B0295C8A2F8881840079A3DE /* LabWeek7Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LabWeek7Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B0295C9D2F888A570079A3DE /* Exceptions for "LabWeek7" folder in "LabWeek7Watch Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ContentView.swift,
+				Model/Pet.swift,
+				Model/Stat.swift,
+				ViewModel/PetViewModel.swift,
+				VIew/watchOS/WatchActionViews.swift,
+				VIew/watchOS/WatchStatusView.swift,
+			);
+			target = B0295C892F8881840079A3DE /* LabWeek7Watch Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B0295C592F88778C0079A3DE /* LabWeek7 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B0295C9D2F888A570079A3DE /* Exceptions for "LabWeek7" folder in "LabWeek7Watch Watch App" target */,
+			);
 			path = LabWeek7;
 			sourceTree = "<group>";
 		};
 		B0295C8E2F8881840079A3DE /* LabWeek7Watch Watch App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = "LabWeek7Watch Watch App";
 			sourceTree = "<group>";
 		};
@@ -109,8 +129,6 @@
 				B0295C592F88778C0079A3DE /* LabWeek7 */,
 			);
 			name = LabWeek7;
-			packageProductDependencies = (
-			);
 			productName = LabWeek7;
 			productReference = B0295C572F88778C0079A3DE /* LabWeek7.app */;
 			productType = "com.apple.product-type.application";
@@ -128,8 +146,6 @@
 				B0295C8D2F8881840079A3DE /* PBXTargetDependency */,
 			);
 			name = LabWeek7Watch;
-			packageProductDependencies = (
-			);
 			productName = LabWeek7Watch;
 			productReference = B0295C852F8881830079A3DE /* LabWeek7Watch.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
@@ -150,8 +166,6 @@
 				B0295C8E2F8881840079A3DE /* LabWeek7Watch Watch App */,
 			);
 			name = "LabWeek7Watch Watch App";
-			packageProductDependencies = (
-			);
 			productName = "LabWeek7Watch Watch App";
 			productReference = B0295C8A2F8881840079A3DE /* LabWeek7Watch Watch App.app */;
 			productType = "com.apple.product-type.application";
