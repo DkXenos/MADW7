@@ -20,11 +20,11 @@ struct HomeView: View {
                     ZStack {
                         Image("my-face")
                             .resizable()
-                            .scaledToFit()
-                            .frame(height: 150)
-                            .cornerRadius(15)
+                            .scaledToFill()
+                            .frame(maxWidth: .infinity)
+                            .clipped()
                             .grayscale(viewModel.pet.isAlive ? 0.0 : 1.0)
-                            
+
                         if !viewModel.pet.isAlive {
                             Color.black.opacity(0.3)
                                 .cornerRadius(15)
